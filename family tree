@@ -1,0 +1,27 @@
+from binarytree import Node
+gf=input('Enter grandfather name: ')
+root = Node(gf)
+
+f1=input('Enter first child of grandfather: ')
+root.left = Node(f1)
+
+f2=input('Enter second child of grandfather: ')
+root.right = Node(f2)
+
+print('Enter first child of ',f1,': ')
+f11=input()
+root.left.left=Node(f11)
+
+print('Enter second child of ',f1,': ')
+f12=input()
+root.left.right=Node(f12)
+
+print('Enter first child of ',f2,': ')
+f21=input()
+root.right.left=Node(f21)
+
+print('Enter second child of ',f2,': ')
+f22=input()
+root.right.right=Node(f22)
+
+print('Family tree :', root)
